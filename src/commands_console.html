@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0"
+        />
+        <link
+            rel="stylesheet"
+            href="css/bootstrap.min.css"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="css/font-awesome/all.min.css"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Todo App</title>
+    </head>
+    <body>
+        # 2 -> $ docker build -t getting-started . # Sending build context to
+        Docker daemon 6.77MB # Step 1/5 : FROM node:12-alpine # 12-alpine:
+        Pulling from library/node # cbdbe7a5bc2a: Already exists # 57d481011659:
+        Pull complete # d6fabc993f17: Pull complete # 834ca887ea10: Pull
+        complete # Digest:
+        sha256:663da4974c48ef1ac5abd10c432c6a154cb675a0e5ca2324d8f92a1edb8429e2
+        # Status: Downloaded newer image for node:12-alpine # ---> 1f52b7199ba6
+        # Step 2/5 : WORKDIR /app # ---> Running in efa0d0acddd9 # Removing
+        intermediate container efa0d0acddd9 # ---> 6e665f0c6d34 # Step 3/5 :
+        COPY . . # ---> 23f30beb4ed7 # Step 4/5 : RUN yarn install --production
+        # ---> Running in df5f2e909089 # yarn install v1.22.4 # [1/4] Resolving
+        packages... # [2/4] Fetching packages... # info fsevents@1.2.9: The
+        platform "linux" is incompatible with this module. # info
+        "fsevents@1.2.9" is an optional dependency and failed compatibility
+        check. Excluding it from installation. # [3/4] Linking dependencies... #
+        [4/4] Building fresh packages... # Done in 85.49s. # Removing
+        intermediate container df5f2e909089 # ---> 4a54da991d00 # Step 5/5 : CMD
+        ["node", "src/index.js"] # ---> Running in 3349853b09e6 # Removing
+        intermediate container 3349853b09e6 # ---> c84dcc5d1a1d # Successfully
+        built c84dcc5d1a1d # Successfully tagged getting-started:latest #
+        SECURITY WARNING: You are building a Docker image from Windows against a
+        non-Windows Docker host. All files and directories added to build
+        context will have '-rwxr-xr-x' permissions. It is recommended to double
+        check and reset permissions for sensitive files and directories.
+    </body>
+</html>
